@@ -1,3 +1,5 @@
+# demo 均于之对应 [webpack guides](https://webpack.js.org/guides/asset-management/)
+
 # Modules 模块化加载
 1. webpack原生支持多种模块化框架，如import、export
 1. webpack打包时不会改变除了import和export声明之外的任何代码（若想转化代码，可以使用babel）
