@@ -1,10 +1,10 @@
-import _ from 'lodash'
+import a from './a.js'
 
 function component() {
   var element = document.createElement('div');
 
   // Lodash
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  element.innerHTML = a;
 
   return element;
 }
