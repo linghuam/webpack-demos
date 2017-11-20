@@ -1,0 +1,30 @@
+{
+  "name": "webpack-demos",
+  "version": "1.0.0",
+  "description": "webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linghuam/webpack-demos.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "linghuam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linghuam/webpack-demos/issues"
+  },
+  "homepage": "https://github.com/linghuam/webpack-demos#readme",
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.1.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
