@@ -1,6 +1,9 @@
 # Note
 demo 来自于 [webpack guides](https://webpack.js.org/guides/asset-management/) 的各个章节
 
+# Concepts
+[基本概念](./Concepts.md)
+
 # Thinking
 将模块化看成树状结构，入口（Entry）是根节点，出口（Output）是遍历整棵树后生成的一个结果，加载器（Loader）和插件（Plugins）是中间处理过程。
 单模块是单棵树，多模块是多棵树。
