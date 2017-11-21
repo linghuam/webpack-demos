@@ -20,5 +20,5 @@ demo 来自于 [webpack guides](https://webpack.js.org/guides/asset-management/)
 答：[caching](https://webpack.js.org/guides/caching/)
 
 # Tool
-[Webpack可视化分析工具](https://webpack.js.org/guides/code-splitting/#bundle-analysis)
-[vue中的懒加载](https://alexjoverm.github.io/2017/07/16/Lazy-load-in-Vue-using-Webpack-s-code-splitting/)
+* [Webpack可视化分析工具](https://webpack.js.org/guides/code-splitting/#bundle-analysis)
+* [vue中的懒加载](https://alexjoverm.github.io/2017/07/16/Lazy-load-in-Vue-using-Webpack-s-code-splitting/)
