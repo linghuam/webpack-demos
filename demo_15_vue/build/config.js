@@ -31,8 +31,11 @@ module.exports = {
     // If you have problems debugging vue-files in devtools,
     // set this to false - it *may* help
     // https://vue-loader.vuejs.org/en/options.html#cachebusting
+    // 是否打破缓存，默认不缓存
     cacheBusting: true,
-
+    
+    // css 映射
+    // http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html
     cssSourceMap: true
   },
 
