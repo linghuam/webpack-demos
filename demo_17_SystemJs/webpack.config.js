@@ -1,20 +1,13 @@
 const path = require('path');
-const systemjsInterop = require("systemjs-webpack-interop/webpack-config");
 
-// module.exports = {
-//   mode: 'development',
-//   entry: './main.js',
-//   output: {
-//     filename: 'bundle.js',
-//     libraryTarget: 'umd'
-//   }
-// }
-
-module.exports = systemjsInterop.modifyWebpackConfig({
+module.exports = {
   mode: 'development',
   entry: './main.js',
   output: {
     filename: 'bundle.js',
-    // libraryTarget: 'umd'
-  }
-});
+    path: path.resolve(__dirname, 'dist'),
+    libraryTarget: 'system'
+  },
+  // Webpack externals will be shared across bundles and come from the import map and systemjs
+  externals: ['vue', 'lodash']
+}

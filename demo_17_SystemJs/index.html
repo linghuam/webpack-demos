@@ -6,7 +6,24 @@
   <title>system.js-test</title>
 </head>
 <body>
-  <p>system.js-test</p>
-  <script src="./dist/bundle.js"></script>
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "vue": "http://127.0.0.1:8081/vue/dist/vue.js",
+        "lodash": "http://127.0.0.1:8081/lodash/lodash.js",
+        "com1": "http://127.0.0.1:8080/dist/bundle.js"
+      }
+    }
+  </script>
+  <script src="./node_modules/systemjs/dist/system.js"></script>
+  <button id="importbtn"> 点我导入模块 </button>
+  <script>
+    var btn = document.getElementById('importbtn');
+    btn.addEventListener('click', e => {
+      System.import('com1').then(res => {
+        console.log('import success', res)
+      });
+    }, false);
+  </script>
 </body>
 </html>
