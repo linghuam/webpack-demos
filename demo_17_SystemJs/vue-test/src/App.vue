@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <button @click="handleClick" style="font-size:20px;">click me to import packages</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+
+  methods: {
+    handleClick() {
+      // eslint-disable-next-line
+      System.import('com1').then(res => {
+        console.log('import success', res)
+      });
+    }
   }
 }
 </script>
