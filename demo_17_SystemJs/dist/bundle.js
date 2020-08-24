@@ -1,7 +1,11 @@
-System.register([], function(__WEBPACK_DYNAMIC_EXPORT__) {
-
+System.register(["lodash"], function(__WEBPACK_DYNAMIC_EXPORT__) {
+	var __WEBPACK_EXTERNAL_MODULE_lodash__;
 	return {
-
+		setters: [
+			function(module) {
+				__WEBPACK_EXTERNAL_MODULE_lodash__ = module;
+			}
+		],
 		execute: function() {
 			__WEBPACK_DYNAMIC_EXPORT__(
 /******/ (function(modules) { // webpackBootstrap
@@ -100,7 +104,18 @@ System.register([], function(__WEBPACK_DYNAMIC_EXPORT__) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// import Vue from 'vue'\n// import * as lodash from 'lodash'\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  initChart(ref, config) {\n    alert('initchart');\n    // const nConfig = lodash.cloneDeep(config);\n    // const v = Vue.extend({});\n  }\n});\n\n//# sourceURL=webpack:///./main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"lodash\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n// import Vue from 'vue'\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  initChart(ref, config) {\n    const nConfig = lodash__WEBPACK_IMPORTED_MODULE_0__[\"cloneDeep\"](config);\n    console.log('initchart', lodash__WEBPACK_IMPORTED_MODULE_0__);\n    // const v = Vue.extend({});\n  }\n});\n\n//# sourceURL=webpack:///./main.js?");
+
+/***/ }),
+
+/***/ "lodash":
+/*!*************************!*\
+  !*** external "lodash" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_lodash__;\n\n//# sourceURL=webpack:///external_%22lodash%22?");
 
 /***/ })
 
