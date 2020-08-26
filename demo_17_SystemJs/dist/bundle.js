@@ -1,7 +1,10 @@
-System.register(["lodash"], function(__WEBPACK_DYNAMIC_EXPORT__) {
-	var __WEBPACK_EXTERNAL_MODULE_lodash__;
+System.register(["jquery","lodash"], function(__WEBPACK_DYNAMIC_EXPORT__) {
+	var __WEBPACK_EXTERNAL_MODULE_jquery__, __WEBPACK_EXTERNAL_MODULE_lodash__;
 	return {
 		setters: [
+			function(module) {
+				__WEBPACK_EXTERNAL_MODULE_jquery__ = module;
+			},
 			function(module) {
 				__WEBPACK_EXTERNAL_MODULE_lodash__ = module;
 			}
@@ -104,7 +107,18 @@ System.register(["lodash"], function(__WEBPACK_DYNAMIC_EXPORT__) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"lodash\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n// import Vue from 'vue'\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  initChart(ref, config) {\n    const nConfig = lodash__WEBPACK_IMPORTED_MODULE_0__[\"cloneDeep\"](config);\n    console.log('initchart', lodash__WEBPACK_IMPORTED_MODULE_0__);\n    // const v = Vue.extend({});\n  }\n});\n\n//# sourceURL=webpack:///./main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"jquery\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ \"lodash\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  initChart(ref, config) {\n    const nConfig = lodash__WEBPACK_IMPORTED_MODULE_1__[\"cloneDeep\"](config);\n    const $comp = jquery__WEBPACK_IMPORTED_MODULE_0___default()(ref);\n    console.log('initchart', lodash__WEBPACK_IMPORTED_MODULE_1__, jquery__WEBPACK_IMPORTED_MODULE_0___default.a);\n  }\n});\n\n//# sourceURL=webpack:///./main.js?");
+
+/***/ }),
+
+/***/ "jquery":
+/*!*************************!*\
+  !*** external "jquery" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_jquery__;\n\n//# sourceURL=webpack:///external_%22jquery%22?");
 
 /***/ }),
 

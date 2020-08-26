@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "build:external": "webpack --config webpack.externals.config.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fs": "0.0.1-security",
+    "jquery": "^3.5.1",
     "lodash": "^4.17.20",
     "systemjs": "^6.5.0",
     "systemjs-webpack-interop": "^2.1.2",
