@@ -9,5 +9,5 @@ module.exports = {
     libraryTarget: 'system'
   },
   // Webpack externals will be shared across bundles and come from the import map and systemjs
-  externals: ['jquery', 'lodash', 'echarts']
+  externals: ['jquery', 'lodash', 'vue', 'echarts']
 }

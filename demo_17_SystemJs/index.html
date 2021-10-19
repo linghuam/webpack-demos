@@ -6,11 +6,12 @@
   <title>system.js-test</title>
 </head>
 <body>
-  <!-- <script type="systemjs-importmap">
+  <script type="systemjs-importmap">
     {
       "imports": {
-        "vue": "http://127.0.0.1:8081/vue/dist/vue.js",
-        "lodash": "http://127.0.0.1:8081/lodash/lodash.js",
+        "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js",
+        "jquery": "https://code.jquery.com/jquery-3.6.0.min.js",
+        "lodash": "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js",
         "com1": "http://127.0.0.1:8080/dist/bundle.js"
       }
     }
@@ -21,10 +22,10 @@
     var btn = document.getElementById('importbtn');
     btn.addEventListener('click', e => {
       System.import('com1').then(res => {
-        console.log('import success', res)
+        console.log('import success', res, res.default.initChart())
       });
     }, false);
-  </script> -->
-  <script src="./dist/external.js"></script>
+  </script>
+  <!-- <script src="./dist/external.js"></script> -->
 </body>
 </html>
